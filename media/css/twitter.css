@@ -1,0 +1,137 @@
+/*** Web Fonts ***/
+@font-face {
+  font-family: 'Orator';
+  src: url("/media/font/OratorStd.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/*** Web Fonts ***/
+@font-face {
+  font-family: 'Orator';
+  src: url("/media/font/OratorStd.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* widget container */
+div.root {
+  margin: 0;
+  font-family: "Andale Mono", "Courier New", fixed-width;
+  height: 400px;
+}
+/* widget content */
+div.timeline {
+  background: none;
+  border: none;
+}
+/* widget header */
+div.timeline-header {
+  display: none;
+  background: none;
+}
+iframe.twitter-follow-button {
+  display: none;
+}
+/* twitter feed <ol> */
+.h-feed {
+  font-family: "Andale Mono", "Courier New", fixed-width;
+}
+/* tweet <li> */
+.tweet {
+  font-family: "Andale Mono", "Courier New", fixed-width;
+  background-color: none;
+  padding-left: 12px;
+  *zoom: 1;
+}
+.tweet a:link,
+.tweet a:active,
+.tweet a:visited,
+.tweet a:active,
+.tweet a:hover,
+.tweet a:focus {
+  color: #f80020 !important;
+}
+.tweet:before,
+.tweet:after {
+  content: " ";
+  display: table;
+}
+.tweet:after {
+  clear: both;
+}
+/* timestamp link */
+.permalink {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0 8px 6px 0;
+  font-size: 10px;
+}
+li.tweet:hover .permalink {
+  /* hide when li is hovered (showing other links) */
+  display: none;
+  visibility: hidden;
+}
+/* timestamp */
+/* tweet header */
+.header.h-card.p-author {
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+/* tweet header profile image */
+.avatar {
+  display: none;
+}
+/* tweet header full name */
+.full-name {
+  display: none;
+}
+/* tweet header twitter handle */
+.p-nickname {
+  display: inline;
+  height: auto;
+}
+/* tweet content */
+.e-entry-title {
+  font-family: "Andale Mono", "Courier New", fixed-width;
+}
+/* twitter handle link */
+button.load-more {
+  color: #f80020 !important;
+}
+.expand b {
+  display: none;
+}
+.tweet-actions {
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  -ie-box-shadow: none !important;
+  -o-box-shadow: none !important;
+  box-shadow: none !important;
+  background: none;
+  overflow: visible;
+}
+li.tweet:hover .tweet-actions {
+  background: none;
+}
+.tweet-actions li {
+  margin-left: 6px;
+}
+.tweet-actions .ic-reply,
+.tweet-actions .ic-retweet,
+.tweet-actions .ic-fav {
+  background-image: none;
+  display: none;
+}
+.tweet-actions b {
+  display: block;
+  height: 100%;
+  font-family: "Andale Mono", "Courier New", fixed-width;
+  font-size: 10px;
+  clip: none;
+  position: relative;
+  text-transform: lowercase;
+}
+li.tweet:hover .tweet-actions b {
+  visibility: visible;
+}
