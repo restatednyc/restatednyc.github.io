@@ -351,7 +351,7 @@ section h2.offset {
   /* for 3 album covers per row */
   min-height: 272px;
 }
-.jplayer-single:last-child {
+.jplayer-single:nth-child(3) {
   margin-right: 0px;
 }
 .listing-item {
