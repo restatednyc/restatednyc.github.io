@@ -1,0 +1,150 @@
+/*** DECORATION ***/
+/*** Web Fonts ***/
+@font-face {
+  font-family: 'Orator';
+  src: url("/media/font/OratorStd.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* GENERAL */
+a,
+a:link,
+a:visited,
+a:active,
+a:hover,
+a:focus {
+  color: #f80020;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+nav a,
+nav a:link,
+nav a:visited,
+nav a:active {
+  color: #ffffff;
+  text-decoration: none;
+  text-shadow: 2px 2px 6px #000000;
+}
+nav a.active,
+nav a:link.active,
+nav a:visited.active,
+nav a:active.active,
+nav a:hover,
+nav a:link:hover,
+nav a:visited:hover,
+nav a:active:hover,
+nav a:active,
+nav a:link:active,
+nav a:visited:active,
+nav a:active:active {
+  text-decoration: none;
+  color: #f80020;
+}
+/* BLOCK STYLES */
+#wrapper {
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.9);
+}
+/* IMAGE STYLES */
+#simple-social-media-links img {
+  /* from: http://stackoverflow.com/a/13640428 */
+  /* Firefox 3.5+ */
+  filter: url("data:image/svg+xml;utf8,<svg%20xmlns='http://www.w3.org/2000/svg'><filter%20id='grayscale'><feColorMatrix%20type='matrix'%20values='0.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200%200%200%201%200'/></filter></svg>#grayscale");
+  filter: gray;
+  /* IE6+ */
+  filter: grayscale(100%);
+  /* Current draft standard */
+  -webkit-filter: grayscale(100%);
+  /* New WebKit */
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+}
+#simple-social-media-links img:hover,
+#simple-social-media-links img:focus {
+  -webkit-filter: none;
+  filter: none;
+}
+/* Promo Box */
+#promo-box {
+  -ms-transform: rotate(3deg);
+  /* IE 9 */
+  -moz-transform: rotate(3deg);
+  /* Firefox */
+  -webkit-transform: rotate(3deg);
+  /* Safari and Chrome */
+  -o-transform: rotate(3deg);
+  /* Opera */
+  transform: rotate(3deg);
+}
+#promo-box .line {
+  -ms-transform: rotate(-3deg);
+  /* IE 9 */
+  -moz-transform: rotate(-3deg);
+  /* Firefox */
+  -webkit-transform: rotate(-3deg);
+  /* Safari and Chrome */
+  -o-transform: rotate(-3deg);
+  /* Opera */
+  transform: rotate(-3deg);
+}
+#promo-box .line-2 {
+  -ms-transform: rotate(-6deg);
+  /* IE 9 */
+  -moz-transform: rotate(-6deg);
+  /* Firefox */
+  -webkit-transform: rotate(-6deg);
+  /* Safari and Chrome */
+  -o-transform: rotate(-6deg);
+  /* Opera */
+  transform: rotate(-6deg);
+}
+a #promo-box:hover {
+  text-decoration: none;
+  box-shadow: 0 0 48px rgba(255, 255, 223, 0.5);
+}
+/* LIST STYLES */
+ul.listing {
+  list-style-type: none;
+  position: relative;
+}
+ul.listing h3 {
+  margin: 0;
+  padding: 0;
+}
+ul.listing h3:before {
+  font-family: 'Orator W01 Medium', Orator, Arial, sans-serif;
+  display: block;
+  content: ">";
+  position: absolute;
+  left: 0;
+  color: #f80020;
+}
+ul.listing h3 a {
+  color: #f80020;
+}
+.thumb-gallery {
+  list-style-type: none;
+}
+.thumb-gallery .thumb {
+  background: #888;
+  /* from: http://stackoverflow.com/a/13640428 */
+  /* Firefox 3.5+ */
+  filter: url("data:image/svg+xml;utf8,<svg%20xmlns='http://www.w3.org/2000/svg'><filter%20id='grayscale'><feColorMatrix%20type='matrix'%20values='0.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200%200%200%201%200'/></filter></svg>#grayscale");
+  filter: gray;
+  /* IE6+ */
+  filter: grayscale(100%);
+  /* Current draft standard */
+  -webkit-filter: grayscale(100%);
+  /* New WebKit */
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+}
+.thumb-gallery .thumb:hover,
+.thumb-gallery .thumb:focus {
+  -webkit-filter: none;
+  filter: none;
+}

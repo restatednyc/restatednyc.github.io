@@ -1,0 +1,254 @@
+/*** Layout ***/
+/*** Web Fonts ***/
+@font-face {
+  font-family: 'Orator';
+  src: url("/media/font/OratorStd.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+#wrapper {
+  clear: both;
+  margin: 0 auto;
+  width: 960px;
+  width: 1008px;
+  margin-bottom: 120px;
+  position: relative;
+}
+.site-logo {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+.home .site-logo {
+  float: left;
+  margin: 0;
+  padding: 0;
+  margin-top: 60px;
+  /* change to ((10 * @line) - 192px) for vertical rhythm of 24px */
+}
+.home .site-logo img {
+  vertical-align: bottom;
+}
+#simple-social-media-links {
+  z-index: 10;
+  clear: both;
+  position: absolute;
+  top: 0;
+  right: 12px;
+}
+#simple-social-media-links ul {
+  list-style-type: none;
+  top: 0;
+  right: 0;
+}
+#simple-social-media-links ul li {
+  margin: 0 6px;
+  float: left;
+}
+.home #simple-social-media-links {
+  position: relative;
+  top: -48px;
+  /* farther down on home page */
+}
+.home #simple-social-media-links ul {
+  position: absolute;
+}
+.home #simple-social-media-links ul li {
+  margin: 0 12px;
+}
+nav.main-nav {
+  z-index: 99;
+  clear: both;
+}
+nav.main-nav ul {
+  position: relative;
+  top: -24px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  /* LTR */
+}
+nav.main-nav ul li {
+  display: inline;
+  border: none;
+  background: none;
+  padding: 0;
+  /* LTR */
+  list-style-type: none;
+  list-style-image: none;
+  height: 48px;
+  line-height: 48px;
+}
+nav.main-nav ul li a,
+nav.main-nav ul li a:link,
+nav.main-nav ul li a:visited,
+nav.main-nav ul li a:active {
+  padding: 14px 48px 10px;
+}
+#main {
+  *zoom: 1;
+}
+#main:before,
+#main:after {
+  content: " ";
+  display: table;
+}
+#main:after {
+  clear: both;
+}
+footer {
+  margin-top: 24px;
+  height: 48px;
+}
+footer p {
+  margin: 0 24px;
+}
+aside {
+  display: inline;
+  float: left;
+  margin-left: 48px;
+  margin-right: 48px;
+  width: 224px;
+}
+section {
+  position: relative;
+  padding: 24px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+section h1.offset,
+section h2.offset {
+  position: absolute;
+  top: -38.4px;
+  left: -12px;
+}
+section h2.offset {
+  top: -32px;
+}
+.offset-header {
+  position: relative;
+  padding: 24px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.offset-header h1,
+.offset-header h2 {
+  position: absolute;
+  top: -40px;
+  left: -12px;
+}
+.offset-header h2 {
+  top: -32px;
+}
+#main.no-sidebar .full {
+  display: inline;
+  float: left;
+  margin-left: 48px;
+  margin-right: 48px;
+  width: 864px;
+}
+#main.with-sidebar {
+  background-image: url(/media/img/main-bg.png);
+  background-repeat: repeat-y;
+}
+#main.with-sidebar .left {
+  display: inline;
+  float: left;
+  margin-left: 48px;
+  margin-right: 48px;
+  width: 544px;
+}
+#main.with-sidebar .right {
+  display: inline;
+  float: left;
+  margin-left: 48px;
+  margin-right: 48px;
+  width: 224px;
+}
+#twitter-feed {
+  padding: 12px 2px 2px;
+  height: 363px;
+}
+/* Promo Block */
+#promo-box {
+  position: absolute;
+  top: -30px;
+  right: 30px;
+  width: 320px;
+  padding: 48px 24px 12px;
+}
+#promo-box .line-2 {
+  z-index: 10;
+}
+.thumb-gallery {
+  width: 844px;
+  margin: 0 auto;
+  list-style-type: none;
+  padding-left: 0;
+}
+.thumb-gallery .thumb {
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin-right: 24px;
+  margin-top: 24px;
+}
+.thumb-gallery .thumb.row-end {
+  margin-right: 0;
+}
+.post-nav {
+  *zoom: 1;
+}
+.post-nav .prev {
+  float: left;
+}
+.post-nav .next {
+  float: right;
+}
+.post-nav:before,
+.post-nav:after {
+  content: " ";
+  display: table;
+}
+.post-nav:after {
+  clear: both;
+}
+.jplayer-single {
+  display: inline;
+  float: left;
+  margin-left: 48px;
+  margin-right: 48px;
+  width: -16px;
+  margin-left: 0px;
+  margin-right: 24px;
+  overflow: hidden;
+  width: 272px;
+  /* for 3 album covers per row */
+  min-height: 272px;
+}
+.jplayer-single:nth-child(3) {
+  margin-right: 0px;
+}
+.listing-item {
+  margin-bottom: 24px;
+}
+.listing-item:last-child {
+  margin-bottom: 0;
+}
+.single-title,
+.single-info,
+.album-title,
+.album-info {
+  margin-bottom: 0;
+}
+.single-title,
+.album-title {
+  margin-top: 12px;
+}
+#mti_wfs_colophon {
+  display: none !important;
+}
+/* Contact page */
+#recaptcha_widget_div {
+  display: none;
+}

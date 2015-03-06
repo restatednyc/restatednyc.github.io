@@ -1,0 +1,123 @@
+/*** Web Fonts ***/
+@font-face {
+  font-family: 'Orator';
+  src: url("/media/font/OratorStd.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/*** Typography ***/
+body {
+  /*.orator;*/
+  /*text-transform:lowercase;*/
+  font-family: Verdana, Arial, sans-serif;
+}
+.accent-font {
+  font-family: 'Orator W01 Medium', Orator, Arial, sans-serif;
+}
+.teaser-title {
+  font-size: 1.4em;
+}
+#promo-box {
+  font-family: 'Orator W01 Medium', Orator, Arial, sans-serif;
+  text-transform: uppercase;
+  color: white;
+}
+#promo-box .line {
+  font-size: 1.4em;
+  text-align: left;
+  line-height: 30px;
+}
+#promo-box .line-2 {
+  font-size: 2.1em;
+  text-align: center;
+  color: #f80020;
+}
+#promo-box .line-3 {
+  text-align: right;
+  line-height: 24px;
+}
+.upper {
+  text-transform: uppercase;
+}
+.main-nav {
+  font-size: 30px;
+}
+h1,
+h2,
+h3,
+.main-nav {
+  font-family: 'Orator W01 Medium', Orator, Arial, sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+footer {
+  text-align: center;
+  font-size: 12px;
+}
+p {
+  margin-top: 0;
+  line-height: 24px;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+.single-title,
+.single-info,
+.single-links,
+.album-title,
+.album-info,
+.album-links {
+  text-align: center;
+}
+.single-title a,
+.single-info a,
+.single-links a,
+.album-title a,
+.album-info a,
+.album-links a,
+.single-title a:link,
+.single-info a:link,
+.single-links a:link,
+.album-title a:link,
+.album-info a:link,
+.album-links a:link,
+.single-title a:visited,
+.single-info a:visited,
+.single-links a:visited,
+.album-title a:visited,
+.album-info a:visited,
+.album-links a:visited,
+.single-title a:active,
+.single-info a:active,
+.single-links a:active,
+.album-title a:active,
+.album-info a:active,
+.album-links a:active,
+.single-title a:hover,
+.single-info a:hover,
+.single-links a:hover,
+.album-title a:hover,
+.album-info a:hover,
+.album-links a:hover,
+.single-title a:focus,
+.single-info a:focus,
+.single-links a:focus,
+.album-title a:focus,
+.album-info a:focus,
+.album-links a:focus {
+  color: #ffffff;
+}
+.single-links,
+.album-links {
+  font-size: 0.8em;
+}
+.single-title,
+.album-title {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  color: #f80020;
+  font-family: 'Orator W01 Medium', Orator, Arial, sans-serif;
+}
+.album-title {
+  font-size: 1.5em;
+}

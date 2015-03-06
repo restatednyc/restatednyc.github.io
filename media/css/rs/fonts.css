@@ -1,0 +1,7 @@
+/*** Web Fonts ***/
+@font-face {
+  font-family: 'Orator';
+  src: url("/media/font/OratorStd.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}

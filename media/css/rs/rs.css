@@ -1,0 +1,870 @@
+/*** Layout ***/
+/*** Web Fonts ***/
+@font-face {
+  font-family: 'Orator';
+  src: url("/media/font/OratorStd.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+#wrapper {
+  clear: both;
+  margin: 0 auto;
+  width: 960px;
+  width: 1008px;
+  margin-bottom: 120px;
+  position: relative;
+}
+.site-logo {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+.home .site-logo {
+  float: left;
+  margin: 0;
+  padding: 0;
+  margin-top: 60px;
+  /* change to ((10 * @line) - 192px) for vertical rhythm of 24px */
+}
+.home .site-logo img {
+  vertical-align: bottom;
+}
+#simple-social-media-links {
+  z-index: 10;
+  clear: both;
+  position: absolute;
+  top: 0;
+  right: 12px;
+}
+#simple-social-media-links ul {
+  list-style-type: none;
+  top: 0;
+  right: 0;
+}
+#simple-social-media-links ul li {
+  margin: 0 6px;
+  float: left;
+}
+.home #simple-social-media-links {
+  position: relative;
+  top: -48px;
+  /* farther down on home page */
+}
+.home #simple-social-media-links ul {
+  position: absolute;
+}
+.home #simple-social-media-links ul li {
+  margin: 0 12px;
+}
+nav.main-nav {
+  z-index: 99;
+  clear: both;
+}
+nav.main-nav ul {
+  position: relative;
+  top: -24px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  /* LTR */
+}
+nav.main-nav ul li {
+  display: inline;
+  border: none;
+  background: none;
+  padding: 0;
+  /* LTR */
+  list-style-type: none;
+  list-style-image: none;
+  height: 48px;
+  line-height: 48px;
+}
+nav.main-nav ul li a,
+nav.main-nav ul li a:link,
+nav.main-nav ul li a:visited,
+nav.main-nav ul li a:active {
+  padding: 14px 48px 10px;
+}
+#main {
+  *zoom: 1;
+}
+#main:before,
+#main:after {
+  content: " ";
+  display: table;
+}
+#main:after {
+  clear: both;
+}
+#main:before,
+#main:after {
+  content: " ";
+  display: table;
+}
+#main:after {
+  clear: both;
+}
+#main:before,
+#main:after {
+  content: " ";
+  display: table;
+}
+#main:after {
+  clear: both;
+}
+#main:before,
+#main:after {
+  content: " ";
+  display: table;
+}
+#main:after {
+  clear: both;
+}
+footer {
+  margin-top: 24px;
+  height: 48px;
+}
+footer p {
+  margin: 0 24px;
+}
+aside {
+  display: inline;
+  float: left;
+  margin-left: 48px;
+  margin-right: 48px;
+  width: 224px;
+}
+section {
+  position: relative;
+  padding: 24px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+section h1.offset,
+section h2.offset {
+  position: absolute;
+  top: -38.4px;
+  left: -12px;
+}
+section h2.offset {
+  top: -32px;
+}
+.offset-header {
+  position: relative;
+  padding: 24px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.offset-header h1,
+.offset-header h2 {
+  position: absolute;
+  top: -40px;
+  left: -12px;
+}
+.offset-header h2 {
+  top: -32px;
+}
+#main.no-sidebar .full {
+  display: inline;
+  float: left;
+  margin-left: 48px;
+  margin-right: 48px;
+  width: 864px;
+}
+#main.with-sidebar {
+  background-image: url(/media/img/main-bg.png);
+  background-repeat: repeat-y;
+}
+#main.with-sidebar .left {
+  display: inline;
+  float: left;
+  margin-left: 48px;
+  margin-right: 48px;
+  width: 544px;
+}
+#main.with-sidebar .right {
+  display: inline;
+  float: left;
+  margin-left: 48px;
+  margin-right: 48px;
+  width: 224px;
+}
+#twitter-feed {
+  padding: 12px 2px 2px;
+  height: 363px;
+}
+/* Promo Block */
+#promo-box {
+  position: absolute;
+  top: -30px;
+  right: 30px;
+  width: 320px;
+  padding: 48px 24px 12px;
+}
+#promo-box .line-2 {
+  z-index: 10;
+}
+.thumb-gallery {
+  width: 844px;
+  margin: 0 auto;
+  list-style-type: none;
+  padding-left: 0;
+}
+.thumb-gallery .thumb {
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin-right: 24px;
+  margin-top: 24px;
+}
+.thumb-gallery .thumb.row-end {
+  margin-right: 0;
+}
+.post-nav {
+  *zoom: 1;
+}
+.post-nav .prev {
+  float: left;
+}
+.post-nav .next {
+  float: right;
+}
+.post-nav:before,
+.post-nav:after {
+  content: " ";
+  display: table;
+}
+.post-nav:after {
+  clear: both;
+}
+.post-nav:before,
+.post-nav:after {
+  content: " ";
+  display: table;
+}
+.post-nav:after {
+  clear: both;
+}
+.post-nav:before,
+.post-nav:after {
+  content: " ";
+  display: table;
+}
+.post-nav:after {
+  clear: both;
+}
+.post-nav:before,
+.post-nav:after {
+  content: " ";
+  display: table;
+}
+.post-nav:after {
+  clear: both;
+}
+.jplayer-single {
+  display: inline;
+  float: left;
+  margin-left: 48px;
+  margin-right: 48px;
+  width: -16px;
+  margin-left: 0px;
+  margin-right: 24px;
+  overflow: hidden;
+  width: 272px;
+  /* for 3 album covers per row */
+  min-height: 272px;
+}
+.jplayer-single:nth-child(3) {
+  margin-right: 0px;
+}
+.listing-item {
+  margin-bottom: 24px;
+}
+.listing-item:last-child {
+  margin-bottom: 0;
+}
+.single-title,
+.single-info,
+.album-title,
+.album-info {
+  margin-bottom: 0;
+}
+.single-title,
+.album-title {
+  margin-top: 12px;
+}
+#mti_wfs_colophon {
+  display: none !important;
+}
+/* Contact page */
+#recaptcha_widget_div {
+  display: none;
+}
+/*** Backgrounds ***/
+/*** Web Fonts ***/
+@font-face {
+  font-family: 'Orator';
+  src: url("/media/font/OratorStd.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+body {
+  background-color: #444444;
+  color: #ffffff;
+}
+#wrapper {
+  background-color: #1c1c1c;
+  /* multiple background images! */
+  background-image: url("/media/img/bg_dots_960.png"), url("/media/img/bg_top-feather_960.png"), url("/media/img/bg_bottom-feather_960.png"), url("/media/img/bg_mid-repeat-y_960.jpg");
+  background-position: center top, center top, center bottom, center top;
+  background-size: 1024px auto;
+  /* slightly larger to avoid white areas...random */
+  background-repeat: no-repeat, no-repeat, no-repeat, repeat-y;
+}
+.lt-ie9 #wrapper {
+  /* background for IE8 and earlier */
+  background-image: url("/media/img/bg_mid-repeat-y_980.jpg");
+  background-repeat: repeat-y;
+}
+header {
+  *zoom: 1;
+  /* fallback for lt IE 8 */
+  /* fallback for lt IE 8 */
+  /* fallback for lt IE 8 */
+  background-color: #111;
+  /* fallback for lt IE 8 */
+  background-color: rgba(0, 0, 0, 0.5);
+}
+header:before,
+header:after {
+  content: " ";
+  display: table;
+}
+header:after {
+  clear: both;
+}
+header:before,
+header:after {
+  content: " ";
+  display: table;
+}
+header:after {
+  clear: both;
+}
+header:before,
+header:after {
+  content: " ";
+  display: table;
+}
+header:after {
+  clear: both;
+}
+header:before,
+header:after {
+  content: " ";
+  display: table;
+}
+header:after {
+  clear: both;
+}
+.home header {
+  background: none;
+}
+section,
+#promo-box {
+  /* fallback for lt IE 8 */
+  /* fallback for lt IE 8 */
+  /* fallback for lt IE 8 */
+  background-color: #111;
+  /* fallback for lt IE 8 */
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/*** Web Fonts ***/
+@font-face {
+  font-family: 'Orator';
+  src: url("/media/font/OratorStd.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/*** Typography ***/
+body {
+  /*.orator;*/
+  /*text-transform:lowercase;*/
+  font-family: Verdana, Arial, sans-serif;
+}
+.accent-font {
+  font-family: 'Orator W01 Medium', Orator, Arial, sans-serif;
+}
+.teaser-title {
+  font-size: 1.4em;
+}
+#promo-box {
+  font-family: 'Orator W01 Medium', Orator, Arial, sans-serif;
+  text-transform: uppercase;
+  color: white;
+}
+#promo-box .line {
+  font-size: 1.4em;
+  text-align: left;
+  line-height: 30px;
+}
+#promo-box .line-2 {
+  font-size: 2.1em;
+  text-align: center;
+  color: #f80020;
+}
+#promo-box .line-3 {
+  text-align: right;
+  line-height: 24px;
+}
+.upper {
+  text-transform: uppercase;
+}
+.main-nav {
+  font-size: 30px;
+}
+h1,
+h2,
+h3,
+.main-nav {
+  font-family: 'Orator W01 Medium', Orator, Arial, sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+footer {
+  text-align: center;
+  font-size: 12px;
+}
+p {
+  margin-top: 0;
+  line-height: 24px;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+.single-title,
+.single-info,
+.single-links,
+.album-title,
+.album-info,
+.album-links {
+  text-align: center;
+}
+.single-title a,
+.single-info a,
+.single-links a,
+.album-title a,
+.album-info a,
+.album-links a,
+.single-title a:link,
+.single-info a:link,
+.single-links a:link,
+.album-title a:link,
+.album-info a:link,
+.album-links a:link,
+.single-title a:visited,
+.single-info a:visited,
+.single-links a:visited,
+.album-title a:visited,
+.album-info a:visited,
+.album-links a:visited,
+.single-title a:active,
+.single-info a:active,
+.single-links a:active,
+.album-title a:active,
+.album-info a:active,
+.album-links a:active,
+.single-title a:hover,
+.single-info a:hover,
+.single-links a:hover,
+.album-title a:hover,
+.album-info a:hover,
+.album-links a:hover,
+.single-title a:focus,
+.single-info a:focus,
+.single-links a:focus,
+.album-title a:focus,
+.album-info a:focus,
+.album-links a:focus {
+  color: #ffffff;
+}
+.single-links,
+.album-links {
+  font-size: 0.8em;
+}
+.single-title,
+.album-title {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  color: #f80020;
+  font-family: 'Orator W01 Medium', Orator, Arial, sans-serif;
+}
+.album-title {
+  font-size: 1.5em;
+}
+/*** DECORATION ***/
+/*** Web Fonts ***/
+@font-face {
+  font-family: 'Orator';
+  src: url("/media/font/OratorStd.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* GENERAL */
+a,
+a:link,
+a:visited,
+a:active,
+a:hover,
+a:focus {
+  color: #f80020;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+nav a,
+nav a:link,
+nav a:visited,
+nav a:active {
+  color: #ffffff;
+  text-decoration: none;
+  text-shadow: 2px 2px 6px #000000;
+}
+nav a.active,
+nav a:link.active,
+nav a:visited.active,
+nav a:active.active,
+nav a:hover,
+nav a:link:hover,
+nav a:visited:hover,
+nav a:active:hover,
+nav a:active,
+nav a:link:active,
+nav a:visited:active,
+nav a:active:active {
+  text-decoration: none;
+  color: #f80020;
+}
+/* BLOCK STYLES */
+#wrapper {
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.9);
+}
+/* IMAGE STYLES */
+#simple-social-media-links img {
+  /* from: http://stackoverflow.com/a/13640428 */
+  /* Firefox 3.5+ */
+  /* IE6+ */
+  /* Current draft standard */
+  /* New WebKit */
+  /* from: http://stackoverflow.com/a/13640428 */
+  /* Firefox 3.5+ */
+  /* IE6+ */
+  /* Current draft standard */
+  /* New WebKit */
+  /* from: http://stackoverflow.com/a/13640428 */
+  /* Firefox 3.5+ */
+  /* IE6+ */
+  /* Current draft standard */
+  /* New WebKit */
+  /* from: http://stackoverflow.com/a/13640428 */
+  /* Firefox 3.5+ */
+  /* IE6+ */
+  /* Current draft standard */
+  /* New WebKit */
+  /* from: http://stackoverflow.com/a/13640428 */
+  /* Firefox 3.5+ */
+  /* IE6+ */
+  /* Current draft standard */
+  /* New WebKit */
+  /* from: http://stackoverflow.com/a/13640428 */
+  /* Firefox 3.5+ */
+  /* IE6+ */
+  /* Current draft standard */
+  /* New WebKit */
+  /* from: http://stackoverflow.com/a/13640428 */
+  /* Firefox 3.5+ */
+  /* IE6+ */
+  /* Current draft standard */
+  /* New WebKit */
+  /* from: http://stackoverflow.com/a/13640428 */
+  /* Firefox 3.5+ */
+  /* IE6+ */
+  /* Current draft standard */
+  /* New WebKit */
+  /* from: http://stackoverflow.com/a/13640428 */
+  /* Firefox 3.5+ */
+  /* IE6+ */
+  /* Current draft standard */
+  /* New WebKit */
+  /* from: http://stackoverflow.com/a/13640428 */
+  /* Firefox 3.5+ */
+  /* IE6+ */
+  /* Current draft standard */
+  /* New WebKit */
+  /* from: http://stackoverflow.com/a/13640428 */
+  /* Firefox 3.5+ */
+  /* IE6+ */
+  /* Current draft standard */
+  /* New WebKit */
+  /* from: http://stackoverflow.com/a/13640428 */
+  /* Firefox 3.5+ */
+  /* IE6+ */
+  /* Current draft standard */
+  /* New WebKit */
+  /* from: http://stackoverflow.com/a/13640428 */
+  /* Firefox 3.5+ */
+  /* IE6+ */
+  /* Current draft standard */
+  /* New WebKit */
+  /* from: http://stackoverflow.com/a/13640428 */
+  /* Firefox 3.5+ */
+  /* IE6+ */
+  /* Current draft standard */
+  /* New WebKit */
+  /* from: http://stackoverflow.com/a/13640428 */
+  /* Firefox 3.5+ */
+  /* IE6+ */
+  /* Current draft standard */
+  /* New WebKit */
+  /* from: http://stackoverflow.com/a/13640428 */
+  /* Firefox 3.5+ */
+  filter: url("data:image/svg+xml;utf8,<svg%20xmlns='http://www.w3.org/2000/svg'><filter%20id='grayscale'><feColorMatrix%20type='matrix'%20values='0.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200%200%200%201%200'/></filter></svg>#grayscale");
+  filter: gray;
+  /* IE6+ */
+  filter: grayscale(100%);
+  /* Current draft standard */
+  -webkit-filter: grayscale(100%);
+  /* New WebKit */
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+}
+#simple-social-media-links img:hover,
+#simple-social-media-links img:focus {
+  -webkit-filter: none;
+  filter: none;
+}
+#simple-social-media-links img:hover,
+#simple-social-media-links img:focus {
+  -webkit-filter: none;
+  filter: none;
+}
+#simple-social-media-links img:hover,
+#simple-social-media-links img:focus {
+  -webkit-filter: none;
+  filter: none;
+}
+#simple-social-media-links img:hover,
+#simple-social-media-links img:focus {
+  -webkit-filter: none;
+  filter: none;
+}
+/* Promo Box */
+#promo-box {
+  /* IE 9 */
+  /* Firefox */
+  /* Safari and Chrome */
+  /* Opera */
+  /* IE 9 */
+  /* Firefox */
+  /* Safari and Chrome */
+  /* Opera */
+  /* IE 9 */
+  /* Firefox */
+  /* Safari and Chrome */
+  /* Opera */
+  -ms-transform: rotate(3deg);
+  /* IE 9 */
+  -moz-transform: rotate(3deg);
+  /* Firefox */
+  -webkit-transform: rotate(3deg);
+  /* Safari and Chrome */
+  -o-transform: rotate(3deg);
+  /* Opera */
+  transform: rotate(3deg);
+}
+#promo-box .line {
+  /* IE 9 */
+  /* Firefox */
+  /* Safari and Chrome */
+  /* Opera */
+  /* IE 9 */
+  /* Firefox */
+  /* Safari and Chrome */
+  /* Opera */
+  /* IE 9 */
+  /* Firefox */
+  /* Safari and Chrome */
+  /* Opera */
+  -ms-transform: rotate(-3deg);
+  /* IE 9 */
+  -moz-transform: rotate(-3deg);
+  /* Firefox */
+  -webkit-transform: rotate(-3deg);
+  /* Safari and Chrome */
+  -o-transform: rotate(-3deg);
+  /* Opera */
+  transform: rotate(-3deg);
+}
+#promo-box .line-2 {
+  /* IE 9 */
+  /* Firefox */
+  /* Safari and Chrome */
+  /* Opera */
+  /* IE 9 */
+  /* Firefox */
+  /* Safari and Chrome */
+  /* Opera */
+  /* IE 9 */
+  /* Firefox */
+  /* Safari and Chrome */
+  /* Opera */
+  -ms-transform: rotate(-6deg);
+  /* IE 9 */
+  -moz-transform: rotate(-6deg);
+  /* Firefox */
+  -webkit-transform: rotate(-6deg);
+  /* Safari and Chrome */
+  -o-transform: rotate(-6deg);
+  /* Opera */
+  transform: rotate(-6deg);
+}
+a #promo-box:hover {
+  text-decoration: none;
+  box-shadow: 0 0 48px rgba(255, 255, 223, 0.5);
+}
+/* LIST STYLES */
+ul.listing {
+  list-style-type: none;
+  position: relative;
+}
+ul.listing h3 {
+  margin: 0;
+  padding: 0;
+}
+ul.listing h3:before {
+  font-family: 'Orator W01 Medium', Orator, Arial, sans-serif;
+  display: block;
+  content: ">";
+  position: absolute;
+  left: 0;
+  color: #f80020;
+}
+ul.listing h3 a {
+  color: #f80020;
+}
+.thumb-gallery {
+  list-style-type: none;
+}
+.thumb-gallery .thumb {
+  background: #888;
+  /* from: http://stackoverflow.com/a/13640428 */
+  /* Firefox 3.5+ */
+  /* IE6+ */
+  /* Current draft standard */
+  /* New WebKit */
+  /* from: http://stackoverflow.com/a/13640428 */
+  /* Firefox 3.5+ */
+  /* IE6+ */
+  /* Current draft standard */
+  /* New WebKit */
+  /* from: http://stackoverflow.com/a/13640428 */
+  /* Firefox 3.5+ */
+  /* IE6+ */
+  /* Current draft standard */
+  /* New WebKit */
+  /* from: http://stackoverflow.com/a/13640428 */
+  /* Firefox 3.5+ */
+  /* IE6+ */
+  /* Current draft standard */
+  /* New WebKit */
+  /* from: http://stackoverflow.com/a/13640428 */
+  /* Firefox 3.5+ */
+  /* IE6+ */
+  /* Current draft standard */
+  /* New WebKit */
+  /* from: http://stackoverflow.com/a/13640428 */
+  /* Firefox 3.5+ */
+  /* IE6+ */
+  /* Current draft standard */
+  /* New WebKit */
+  /* from: http://stackoverflow.com/a/13640428 */
+  /* Firefox 3.5+ */
+  /* IE6+ */
+  /* Current draft standard */
+  /* New WebKit */
+  /* from: http://stackoverflow.com/a/13640428 */
+  /* Firefox 3.5+ */
+  /* IE6+ */
+  /* Current draft standard */
+  /* New WebKit */
+  /* from: http://stackoverflow.com/a/13640428 */
+  /* Firefox 3.5+ */
+  /* IE6+ */
+  /* Current draft standard */
+  /* New WebKit */
+  /* from: http://stackoverflow.com/a/13640428 */
+  /* Firefox 3.5+ */
+  /* IE6+ */
+  /* Current draft standard */
+  /* New WebKit */
+  /* from: http://stackoverflow.com/a/13640428 */
+  /* Firefox 3.5+ */
+  /* IE6+ */
+  /* Current draft standard */
+  /* New WebKit */
+  /* from: http://stackoverflow.com/a/13640428 */
+  /* Firefox 3.5+ */
+  /* IE6+ */
+  /* Current draft standard */
+  /* New WebKit */
+  /* from: http://stackoverflow.com/a/13640428 */
+  /* Firefox 3.5+ */
+  /* IE6+ */
+  /* Current draft standard */
+  /* New WebKit */
+  /* from: http://stackoverflow.com/a/13640428 */
+  /* Firefox 3.5+ */
+  /* IE6+ */
+  /* Current draft standard */
+  /* New WebKit */
+  /* from: http://stackoverflow.com/a/13640428 */
+  /* Firefox 3.5+ */
+  /* IE6+ */
+  /* Current draft standard */
+  /* New WebKit */
+  /* from: http://stackoverflow.com/a/13640428 */
+  /* Firefox 3.5+ */
+  filter: url("data:image/svg+xml;utf8,<svg%20xmlns='http://www.w3.org/2000/svg'><filter%20id='grayscale'><feColorMatrix%20type='matrix'%20values='0.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200%200%200%201%200'/></filter></svg>#grayscale");
+  filter: gray;
+  /* IE6+ */
+  filter: grayscale(100%);
+  /* Current draft standard */
+  -webkit-filter: grayscale(100%);
+  /* New WebKit */
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+}
+.thumb-gallery .thumb:hover,
+.thumb-gallery .thumb:focus {
+  -webkit-filter: none;
+  filter: none;
+}
+.thumb-gallery .thumb:hover,
+.thumb-gallery .thumb:focus {
+  -webkit-filter: none;
+  filter: none;
+}
+.thumb-gallery .thumb:hover,
+.thumb-gallery .thumb:focus {
+  -webkit-filter: none;
+  filter: none;
+}
+.thumb-gallery .thumb:hover,
+.thumb-gallery .thumb:focus {
+  -webkit-filter: none;
+  filter: none;
+}

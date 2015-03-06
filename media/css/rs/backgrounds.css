@@ -1,0 +1,49 @@
+/*** Backgrounds ***/
+/*** Web Fonts ***/
+@font-face {
+  font-family: 'Orator';
+  src: url("/media/font/OratorStd.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+body {
+  background-color: #444444;
+  color: #ffffff;
+}
+#wrapper {
+  background-color: #1c1c1c;
+  /* multiple background images! */
+  background-image: url("/media/img/bg_dots_960.png"), url("/media/img/bg_top-feather_960.png"), url("/media/img/bg_bottom-feather_960.png"), url("/media/img/bg_mid-repeat-y_960.jpg");
+  background-position: center top, center top, center bottom, center top;
+  background-size: 1024px auto;
+  /* slightly larger to avoid white areas...random */
+  background-repeat: no-repeat, no-repeat, no-repeat, repeat-y;
+}
+.lt-ie9 #wrapper {
+  /* background for IE8 and earlier */
+  background-image: url("/media/img/bg_mid-repeat-y_980.jpg");
+  background-repeat: repeat-y;
+}
+header {
+  *zoom: 1;
+  background-color: #111;
+  /* fallback for lt IE 8 */
+  background-color: rgba(0, 0, 0, 0.5);
+}
+header:before,
+header:after {
+  content: " ";
+  display: table;
+}
+header:after {
+  clear: both;
+}
+.home header {
+  background: none;
+}
+section,
+#promo-box {
+  background-color: #111;
+  /* fallback for lt IE 8 */
+  background-color: rgba(0, 0, 0, 0.5);
+}

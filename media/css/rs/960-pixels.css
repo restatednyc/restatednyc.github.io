@@ -1,0 +1,56 @@
+// Define grid parameters
+@width:960px;  
+@num_cols:12;
+@col_margin:48px;  // gutter will be twice this value
+
+
+//***** No need to edit below this line *****//
+
+@col_width:@width/@num_cols;
+                                      
+.container(){
+    clear:both;
+    margin:0 auto;
+    width:@width;
+}         
+                                      
+// Calculates element width based on defined grid and number of columns being
+// displayed.  Accounts for margins of @col_margin on each side.
+.grid(@cols:1,@float:left,@display:inline){
+    display:@display;
+    float:@float;
+    margin-left:@col_margin;
+    margin-right:@col_margin;
+    width:(@col_width * @cols) - (2 * @col_margin);   
+}  
+    
+// Grid-Height: for setting aspect ratios
+.grid-height(@cols:1){
+    height:(@col_width * @cols) - (2 * @col_margin);
+}
+
+// Padding
+.prefix(@cols:1){  
+    padding-left:(@col_width * @cols);
+}    
+.suffix(@cols:1){  
+    padding-right:(@col_width * @cols);          
+}
+
+// Children
+.alpha(){
+    margin-left:0;
+}                     
+.omega(){
+    margin-right:0;
+}   
+
+// Position
+.push(@move:1) {
+    position:relative;
+    left:(@col_width * @move);
+} 
+.pull(@move:1) {
+    position:relative;
+    left:(@col_width * @move) * -1;
+}
